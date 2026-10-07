@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+/* Palet final (lihat DESIGN_NOTES.md). Warna bawaan Tailwind dimatikan agar hanya token ini yang bisa dipakai. */
+@theme {
+  --color-*: initial;
+  --color-forest: #14532d;
+  --color-forest-deep: #0c351c;
+  --color-sage: #8aa585;
+  --color-sage-200: #c5d3c0;
+  --color-sage-soft: #e4ebe0;
+  --color-cream: #faf7f0;
+  --color-sand: #f2ecdf;
+  --color-paper: #fffdf8;
+  --color-ink: #1b2a20;
+  --color-ink-soft: #4b5b50;
+  --color-line: #ddd5c4;
+  --color-line-strong: #857e6c;
+  --color-gold: #b38b3c;
+  --color-gold-ink: #7a5c1e;
+  --color-gold-soft: #e8d6a8;
+  --color-danger: #a3341f;
+  --color-danger-soft: #f8e6e1;
+
+  /* Skala Bringhurst: 12 14 16 18 21 24 30 36 48 60 72 */
+  --text-xl: 1.3125rem;
+  --text-xl--line-height: 1.45;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 1.08;
+  --text-6xl: 3.75rem;
+  --text-6xl--line-height: 1.05;
+  --text-7xl: 4.5rem;
+  --text-7xl--line-height: 1.03;
+}
+
+@theme inline {
+  --font-serif: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    text-wrap: balance;
+  }
+
+  p,
+  li,
+  dd {
+    text-wrap: pretty;
+  }
+
+  section[id],
+  [data-anchor] {
+    scroll-margin-top: 4.5rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus-ring, var(--color-forest));
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .on-dark {
+    --focus-ring: var(--color-gold-soft);
+  }
+
+  ::selection {
+    background-color: var(--color-gold-soft);
+    color: var(--color-ink);
+  }
+
+  [lang="ar"] {
+    font-family: "Amiri", "Traditional Arabic", "Noto Naskh Arabic", "Geeza Pro", "Segoe UI", serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Pola bintang delapan sebagai mask, sehingga warnanya mengikuti token (bg-*). */
+  .pattern-girih {
+    mask-image: url("/patterns/girih.svg");
+    mask-size: 64px 64px;
+    mask-repeat: repeat;
+  }
+
+  /* Satu-satunya gerak saat halaman dibuka: cahaya fajar perlahan muncul di bingkai hero. */
+  .hero-dawn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-cream);
+    mask-image: url("/shapes/arch.svg");
+    mask-size: 100% 100%;
+    pointer-events: none;
+    animation: dawn 1400ms ease-out 150ms both;
+  }
+
+  @keyframes dawn {
+    from {
+      opacity: 0.85;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  /* Muncul bertahap hanya untuk langkah berurutan (timeline). Tanpa JavaScript, konten tetap tampil. */
+  @media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(0.75rem);
+      transition:
+        opacity 600ms ease-out,
+        transform 600ms ease-out;
+      transition-delay: calc(var(--reveal-order, 0) * 110ms);
+    }
+
+    [data-reveal][data-revealed] {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

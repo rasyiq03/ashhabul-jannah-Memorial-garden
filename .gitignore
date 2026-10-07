@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+/build
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env
+.env*.local
+
+# data kiriman form (berisi data pribadi keluarga, jangan di-commit)
+/data/submissions.json
+/data/*.corrupt-*.json
+/data/*.tmp
+
+# logs & OS
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# vercel
+.vercel
