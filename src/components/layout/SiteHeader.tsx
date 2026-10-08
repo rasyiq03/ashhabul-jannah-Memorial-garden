@@ -126,7 +126,10 @@ export function SiteHeader() {
         )}
       >
         <div className="overflow-hidden">
-          <nav aria-label="Menu seluler" className="mx-auto max-w-6xl px-4 pb-6 pt-2 sm:px-6">
+          <nav
+            aria-label="Menu seluler"
+            className="mx-auto max-h-[calc(100dvh-4.5rem)] overflow-y-auto max-w-6xl px-4 pb-6 pt-2 sm:px-6"
+          >
             <ul className="divide-y divide-line">
               {primaryNav.map((item) => (
                 <li key={item.sectionId}>

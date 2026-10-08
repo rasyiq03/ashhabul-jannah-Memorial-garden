@@ -31,7 +31,7 @@ export function Timeline({ steps, orientation, label, className }: TimelineProps
           {steps.map((step, index) => (
             <li key={step.title} data-reveal style={revealOrder(index)} className="relative md:pt-10">
               <div aria-hidden="true" className="absolute left-0 right-0 top-4 hidden h-px bg-line md:block" />
-              <div className="flex items-baseline gap-4 md:block">
+              <div className="flex items-start gap-4 md:block">
                 <span
                   aria-hidden="true"
                   className="relative z-10 inline-flex size-9 shrink-0 items-center justify-center rounded-full border border-gold bg-cream font-serif text-lg text-gold-ink md:absolute md:top-0"

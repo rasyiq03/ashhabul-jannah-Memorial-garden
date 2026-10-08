@@ -72,7 +72,11 @@
 
   section[id],
   [data-anchor] {
-    scroll-margin-top: 4.5rem;
+    scroll-margin-top: 5.5rem;
+  }
+
+  html:has(dialog[open]) .floating-actions {
+    display: none;
   }
 
   :focus-visible {

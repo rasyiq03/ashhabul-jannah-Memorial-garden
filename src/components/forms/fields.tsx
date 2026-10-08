@@ -187,7 +187,7 @@ export function ChoiceGroup({ label, hint, error, optional, className, options, 
       aria-describedby={describedBy(id, hint, error)}
       className={cn("flex min-w-0 flex-col gap-1.5", className)}
     >
-      <legend className="mb-1.5 float-left w-full">
+      <legend className="mb-1.5 block w-full">
         <FieldLabel label={label} optional={optional} />
       </legend>
       <FieldHint id={id} hint={hint} />
@@ -226,8 +226,8 @@ export function ChoiceGroup({ label, hint, error, optional, className, options, 
 export function FormGroup({ title, children, className }: { title: string; children: ReactNode; className?: string }) {
   return (
     <fieldset className={cn("min-w-0", className)}>
-      <legend className="float-left mb-5 w-full border-b border-line pb-3 font-serif text-2xl text-forest">{title}</legend>
-      <div className="clear-both grid gap-5 sm:grid-cols-2">{children}</div>
+      <legend className="mb-5 block w-full border-b border-line pb-3 font-serif text-2xl text-forest">{title}</legend>
+      <div className="grid gap-5 sm:grid-cols-2">{children}</div>
     </fieldset>
   );
 }
