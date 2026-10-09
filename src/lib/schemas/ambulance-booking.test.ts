@@ -10,7 +10,7 @@ const validBooking: AmbulanceBookingInput = {
   deceasedName: "H. Abdul Rahman",
   vehicleId: "ambulans-jenazah",
   pickupAddress: "RS Hasan Sadikin, Jl. Pasteur No. 38, Sukajadi",
-  destination: "Taman Wakaf Sakinah",
+  destination: "Ashhabul Jannah",
   pickupDate: "2026-10-08",
   pickupTime: "11:00",
   escortCount: "2",

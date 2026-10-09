@@ -191,7 +191,7 @@ export function AmbulanceBookingForm() {
           />
           <TextField
             label="Tujuan atau lokasi pemakaman"
-            hint="Misalnya Taman Wakaf Sakinah, TPU Cikutra, atau alamat rumah duka."
+            hint="Misalnya Ashhabul Jannah, TPU Cikutra, atau alamat rumah duka."
             className="sm:col-span-2"
             maxLength={FIELD_LIMITS.place}
             error={errors.destination?.message}

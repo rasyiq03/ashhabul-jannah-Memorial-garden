@@ -1,4 +1,4 @@
-# Catatan Desain: Taman Wakaf Sakinah
+# Catatan Desain: Islamic Memorial Garden Ashhabul Jannah
 
 ## Arah visual
 **"Taman di balik lengkung mihrab."** Pengunjung situs ini kebanyakan sedang berduka atau sedang memikirkan kematian. Halaman harus terasa seperti berjalan pagi di taman makam yang terawat: lapang, hijau, sunyi, tanpa kesan jualan. Satu hal yang boleh berani adalah **bentuk lengkung runcing (arch) mihrab**, dipakai sebagai bingkai ilustrasi hero, logo, kutipan hadis, dan galeri. Selebihnya tenang: sudut tegas 4px, garis tipis 1px, tanpa bayangan tebal, tanpa gradien dekoratif.

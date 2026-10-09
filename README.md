@@ -1,4 +1,4 @@
-# Taman Wakaf Sakinah Memorial Park
+# Islamic Memorial Garden Ashhabul Jannah
 
 Situs satu halaman untuk layanan pemakaman Muslim berbasis wakaf: kavling makam wakaf, makam dhuafa, ambulans jenazah 24 jam, dan pemulasaraan jenazah. Dibangun dengan Next.js (App Router), TypeScript, dan Tailwind CSS.
 
@@ -84,7 +84,7 @@ data/             Tempat submissions.json (dibuat otomatis)
 
 1. Push repositori ini ke GitHub, GitLab, atau Bitbucket.
 2. Di Vercel, pilih **Add New → Project**, impor repositorinya. Framework terdeteksi otomatis sebagai Next.js; perintah build `npm run build` tidak perlu diubah.
-3. Di **Settings → Environment Variables**, tambahkan `NEXT_PUBLIC_SITE_URL` dengan domain akhir (misalnya `https://tamanwakafsakinah.id`).
+3. Di **Settings → Environment Variables**, tambahkan `NEXT_PUBLIC_SITE_URL` dengan domain akhir (misalnya `https://ashhabuljannah.id`).
 4. Deploy, lalu sambungkan domain di **Settings → Domains**.
 
 **Penting tentang penyimpanan di Vercel.** Sistem berkas Vercel hanya bisa ditulis di `/tmp` dan isinya hilang setiap kali fungsi dimulai ulang atau dideploy ulang. Di Vercel, situs ini otomatis menulis ke `/tmp/submissions.json`, sehingga **kiriman form tidak tersimpan permanen**. Tautan WhatsApp tetap berfungsi, jadi data tetap sampai ke petugas. Untuk arsip permanen, ganti isi `src/lib/server/submissions-store.ts` dengan penyimpanan seperti Vercel Postgres, Supabase, atau Google Sheets, atau deploy di server sendiri (VPS) dengan `npm run build && npm start` agar `data/submissions.json` tetap ada. Pembatas frekuensi juga hanya berlaku per instance server.

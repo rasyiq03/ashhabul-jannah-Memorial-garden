@@ -93,7 +93,7 @@ export const funeralCareSchema = z
         ctx.addIssue({
           code: "custom",
           path: ["burialDestination"],
-          message: "Tulis tujuan pemakaman, misalnya Taman Wakaf Sakinah atau nama TPU dan kotanya.",
+          message: "Tulis tujuan pemakaman, misalnya Ashhabul Jannah atau nama TPU dan kotanya.",
         });
       }
     }

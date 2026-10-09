@@ -27,17 +27,17 @@ export interface DistanceZone {
   estimateKm: number;
 }
 
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://tamanwakafsakinah.id").replace(/\/$/, "");
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://ashhabuljannah.id").replace(/\/$/, "");
 
 export const site = {
-  name: "Taman Wakaf Sakinah Memorial Park",
-  shortName: "Taman Wakaf Sakinah",
-  nazhir: "Yayasan Wakaf Sakinah Insani",
+  name: "Islamic Memorial Garden Ashhabul Jannah",
+  shortName: "Ashhabul Jannah",
+  nazhir: "Yayasan Wakaf Ashhabul Jannah",
   url: siteUrl,
   locale: "id_ID",
   timeZone: "Asia/Jakarta",
   description:
-    "Pemakaman Muslim berbasis wakaf di Bandung Barat. Kavling makam wakaf, makam dhuafa, ambulans jenazah 24 jam, dan pemulasaraan jenazah sesuai syariat oleh petugas sejenis kelamin.",
+    "Pemakaman Muslim berbasis wakaf Islamic Memorial Garden Ashhabul Jannah di Bandung Barat. Kavling makam wakaf, makam dhuafa, ambulans jenazah 24 jam, dan pemulasaraan jenazah sesuai syariat oleh petugas sejenis kelamin.",
 
   license: {
     label: "Izin pengelolaan tempat pemakaman",
@@ -54,7 +54,7 @@ export const site = {
     whatsappDisplay: "0812-3456-7890",
     ambulancePhone: "+622287654321",
     ambulancePhoneDisplay: "(022) 8765 4321",
-    email: "layanan@tamanwakafsakinah.id",
+    email: "layanan@ashhabuljannah.id",
   },
 
   address: {
@@ -80,9 +80,9 @@ export const site = {
   },
 
   social: [
-    { label: "Instagram", href: "https://www.instagram.com/tamanwakafsakinah" },
-    { label: "YouTube", href: "https://www.youtube.com/@tamanwakafsakinah" },
-    { label: "Facebook", href: "https://www.facebook.com/tamanwakafsakinah" },
+    { label: "Instagram", href: "https://www.instagram.com/ashhabuljannah" },
+    { label: "YouTube", href: "https://www.youtube.com/@ashhabuljannah" },
+    { label: "Facebook", href: "https://www.facebook.com/ashhabuljannah" },
   ],
 
   /** Tampilkan catatan "contoh testimoni" sampai testimoni asli (dengan izin keluarga) dipasang. */

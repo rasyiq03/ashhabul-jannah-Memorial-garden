@@ -72,7 +72,7 @@ export function SiteHeader() {
           <BrandMark className="h-9 w-7 shrink-0" />
           <span className="min-w-0 leading-tight">
             <span className="block truncate font-serif text-lg text-forest sm:text-xl">{site.shortName}</span>{" "}
-            <span className="hidden text-xs text-ink-soft sm:block">Memorial Park</span>
+            <span className="hidden text-xs text-ink-soft sm:block">Islamic Memorial Garden</span>
           </span>
         </Link>
 

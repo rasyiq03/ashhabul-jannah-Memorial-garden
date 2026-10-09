@@ -17,10 +17,10 @@ Keputusan yang diambil sendiri karena brief ambigu atau bertentangan. Semua data
 
 ## Data bisnis fiktif (ganti di `src/config/site.ts`)
 
-- Brand "Taman Wakaf Sakinah Memorial Park" dan nazhir "Yayasan Wakaf Sakinah Insani".
+- Brand "Islamic Memorial Garden Ashhabul Jannah" (nama ringkas: "Ashhabul Jannah") dan nazhir "Yayasan Wakaf Ashhabul Jannah".
 - Nomor izin "503/0172/IPTM-DPMPTSP/2024" dari "DPMPTSP Kabupaten Bandung Barat": **fiktif**.
 - Alamat "Jl. Pasir Kawung No. 27, Desa Cigugur Girang, Parongpong, Bandung Barat", patokan masjid, dan koordinat −6.8236, 107.5794: fiktif, hanya meminjam nama wilayah yang ada.
-- WhatsApp 6281234567890 (dari brief), telepon ambulans (022) 8765 4321, email dan domain `tamanwakafsakinah.id`, akun media sosial: fiktif. Nomor contoh bisa saja milik orang lain, jadi wajib diganti sebelum situs dibuka untuk umum.
+- WhatsApp 6281234567890 (dari brief), telepon ambulans (022) 8765 4321, email dan domain `ashhabuljannah.id`, akun media sosial: fiktif. Nomor contoh bisa saja milik orang lain, jadi wajib diganti sebelum situs dibuka untuk umum.
 - Tidak ada angka statistik (jumlah keluarga terbantu, rating, luas lahan) di halaman. Bila ingin menampilkan fakta seperti luas lahan, tambahkan ke `site.ts` dengan data yang bisa diverifikasi.
 - Harga: ambulans mulai Rp450.000 / Rp900.000 / Rp1.500.000, keranda Rp250.000, peti Rp1.750.000, tenaga angkat Rp200.000, paket pemulasaraan Rp1.750.000 / Rp4.250.000 / gratis, wakaf kavling Rp12.500.000 dicicil 12 kali, kavling 1,25 × 2,5 m. Semua angka perkiraan wajar, bukan harga pasar resmi.
 - Klaim layanan (petugas sejenis kelamin, foto makam dalam dua hari kerja, pembatalan tanpa biaya sebelum berangkat, kursi roda untuk lansia) ditulis sebagai contoh kebijakan. Pastikan sesuai praktik lapangan.
